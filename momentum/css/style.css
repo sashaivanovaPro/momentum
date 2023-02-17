@@ -46,3 +46,42 @@ html {
 *::before {
     box-sizing: inherit;
 }
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Lato";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Header styles START */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.play-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 40px;
+    padding-top: 20px;
+}
+
+/* Header styles END */
+
+/* Main styles START */
+
+/* Main styles END */
+
+/* Footer styles START */
+
+/* Footer styles END */
