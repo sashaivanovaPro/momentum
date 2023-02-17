@@ -50,9 +50,12 @@ html {
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 50px;
 }
 
 body {
+    margin: 0 auto;
+    padding: 0;
     background-color: black;
     color: white;
     font-family: "Lato";
@@ -61,24 +64,44 @@ body {
 }
 
 /* Header styles START */
-
 .header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding-top: 40px;
 }
 
+.player {}
+
 .play-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style-type: disc;
     line-height: 40px;
     padding-top: 20px;
+}
+
+.player__button {
+    border-radius: 40px;
+    margin-right: 10px;
+    opacity: 0.5;
 }
 
 /* Header styles END */
 
 /* Main styles START */
+
+.main {
+    margin: 0 auto;
+    height: 100vh;
+    background: url(/momentum/img/jpeg/Bishkek-1.jpg) no-repeat center;
+    background-size: cover;
+}
 
 /* Main styles END */
 
