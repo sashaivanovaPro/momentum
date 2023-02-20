@@ -10,22 +10,37 @@
 </head>
 <body>
     <header class="header">
-    <div class="wrapper">
         <div class="player">
-            <button class = "player__button" id="rewind"><img src="./img/svg/player/icons8-rewind-button-round-64.png" alt="rewind"></button>
-            <button class = "player__button" id="play"><img src="./img/svg/player/icons8-circled-play-64.png" alt="play"></button>
-            <button class = "player__button" id="forward"><img src="./img/svg/player/icons8-fast-forward-round-64.png" alt="play"></button>
+            <div class="button__wrapper">
+                <button class = "player__button" id="rewind"><img src="./img/png/icons8-rewind-button-round-50.png" alt="rewind"></button>
+                <button class = "player__button" id="play"><img src="./img/png/icons8-circled-play-100.png" alt="play"></button>
+                <button class = "player__button" id="forward"><img src="./img/png/icons8-fast-forward-round-50.png" alt="play"></button>
+            </div>
             <ul class="play-list">
-                <li class = "play-list__item">Track title</li>
-                <li class = "play-list__item">Track title</li>
-                <li class = "play-list__item">Track title</li>
-                <li class = "play-list__item">Track title</li>
+                <li class = "play-list__item"> New track title</li>
+                <li class = "play-list__item"> New track title</li>
+                <li class = "play-list__item"> New track title</li>
+                <li class = "play-list__item"> New track title</li>
         </div>
-        <div class="weather"></div>
-    </div>
+        <div class="weather">
+            <h1 class="city-name">Antalya</h1>
+            <hr class="line">
+            <img class = "weather-icon" src="./img/png/icons8-cloud-lightning-64.png" alt="weather">
+            <ul class = "weather__parameters">
+                <li class="weather__param--item">Temperature</li>
+                <li class="weather__param--item">Wind</li>
+                <li class="weather__param--item">Humidity</li>
+            </ul>
+        </div>
     </header>
     <main class ="main">
-        <section class="time"></section>
+            <button class = "arrow"><img src ="./img/png/icons8-double-left-64 (1).png" alt="arrow"></button>
+            <section class="time">
+                <div class="year" id ="year"></div>
+                <div class="clock" id="clock"></div>
+                <div class="date" id ="date"></div>
+            </section>
+            <button class = "arrow"><img src ="./img/png/icons8-double-right-64.png" alt="arrow"></button>
     </main>
     <footer class="footer"> </footer>
     <script src="./js/main.js"></script>

@@ -47,49 +47,98 @@ html {
     box-sizing: inherit;
 }
 
-.wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 50px;
-}
+
 
 body {
     margin: 0 auto;
     padding: 0;
-    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    background: url(/momentum/img/jpeg/Bishkek-2.jpg) no-repeat center;
+    background-size: cover;
     color: white;
     font-family: "Lato";
     font-size: 24px;
     font-weight: 400;
 }
 
+
 /* Header styles START */
 .header {
+    margin: 0;
+    padding: 40px 40px;
+    padding-top: 40px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: fixed;
-    align-items: center;
-    padding-top: 40px;
+    align-items: flex-start;
 }
 
-.player {}
+.header__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: center;
+}
 
 .play-list {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    list-style-type: disc;
-    line-height: 40px;
+    padding-left: 20px;
+    list-style: none;
+    line-height: 30px;
     padding-top: 20px;
+    opacity: 0.8;
+}
+
+.play-list__item:before {
+    content: '✔';
 }
 
 .player__button {
-    border-radius: 40px;
-    margin-right: 10px;
-    opacity: 0.5;
+    border-radius: 0px;
+    margin-right: 20px;
+    border: none;
+    padding: 0;
+    background: none;
+    opacity: 0.8;
+}
+
+.line {
+    color: 1px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.city-name {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.weather-icon {
+    margin-bottom: 20px;
+}
+
+.weather__parameters {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    opacity: 0.8;
 }
 
 /* Header styles END */
@@ -97,10 +146,25 @@ body {
 /* Main styles START */
 
 .main {
-    margin: 0 auto;
-    height: 100vh;
-    background: url(/momentum/img/jpeg/Bishkek-1.jpg) no-repeat center;
-    background-size: cover;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.arrow {
+    background: none;
+    opacity: 0.8;
+}
+
+.clock {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 /* Main styles END */
