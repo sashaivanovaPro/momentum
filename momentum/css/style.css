@@ -88,13 +88,18 @@ body {
     justify-content: center;
 }
 
+.player {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
 .play-list {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    padding-left: 20px;
     list-style: none;
     line-height: 30px;
     padding-top: 20px;
@@ -124,6 +129,12 @@ body {
 .city-name {
     margin: 0;
     margin-bottom: 5px;
+}
+
+.weather {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
 }
 
 .weather-icon {
@@ -159,13 +170,69 @@ body {
     opacity: 0.8;
 }
 
+.year {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding: 15px 0;
+}
+
 .clock {
     color: white;
     font-size: 100px;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 15px 0;
 }
+
+.date {
+    color: white;
+    font-size: 42px;
+    font-weight: 300;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 0.5;
+}
+
+.greeting__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.greeting {
+    color: white;
+    font-size: 56px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 0.5;
+    margin-right: 20px;
+}
+
+.input__name {
+    border: 0px solid transparent;
+    background-color: transparent;
+    color: white;
+    opacity: 0.8;
+    font-family: "Lato";
+    font-size: 56px;
+    font-weight: 400;
+    width: 50%;
+    text-align: ;
+}
+
+.input__name ::placeholder {
+    opacity: 0.8;
+    font-family: "Lato";
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.arrow {
+    border: 0;
+}
+
+
 
 /* Main styles END */
 
