@@ -147,15 +147,15 @@ async function getLinkToImage() {
     /* температура */
 
     const temperature = document.querySelector('.temperature');
-    temperature.textContent = `${data.main.temp}°C`;
+    temperature.textContent = `${Math.round(data.main.temp)}°C`;
 
     /* другие параметры */
 
     const wind = document.querySelector('.wind');
     wind.textContent = `wind speed: ${data.wind.speed} m/s`;
 
-    //const weatherDescription = document.querySelector('.parametrs');
-    //weatherDescription.textContent = data.weather[0].description;
+    const weatherDescription = document.querySelector('.parametrs');
+    weatherDescription.textContent = data.weather[0].description;
 
     const humidity = document.querySelector('.humidity');
     humidity.textContent = `humidity: ${data.main.humidity}%`;
