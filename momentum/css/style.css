@@ -49,13 +49,15 @@ html {
 
 
 
-body {
+.body {
+    background: url("");
+    transition: background-image 1s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 auto;
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background: url(/momentum/img/jpeg/Bishkek-2.jpg) no-repeat center;
-    background-size: cover;
     color: white;
     font-family: "Lato";
     font-size: 24px;
@@ -218,7 +220,6 @@ body {
     font-size: 56px;
     font-weight: 400;
     width: 50%;
-    text-align: ;
 }
 
 .input__name ::placeholder {
@@ -230,6 +231,12 @@ body {
 
 .arrow {
     border: 0;
+    cursor: pointer;
+}
+
+.arrow:hover,
+.arrow:active {
+    opacity: 0.5;
 }
 
 

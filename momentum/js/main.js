@@ -13,9 +13,9 @@ function currentTime() {
     document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
     const t = setTimeout(currentTime, 1000); /* setting timer */
 
-    let year = date.getFullYear();
+    /*let year = date.getFullYear();
     year = updateTime(year);
-    document.getElementById("year").innerText = year;
+    document.getElementById("year").innerText = year;*/
 
 
     let days = ['Sunday', 'Monday', 'Tueseday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -75,12 +75,12 @@ function currentTime() {
 
 const input = document.getElementById('input__name');
 
-console.log (input);
+//console.log (input);
 function setLocalStorage() {
     localStorage.setItem('name', input.value);
   }
 window.addEventListener('beforeunload', setLocalStorage)
-console.log(input.value);
+//console.log(input.value);
 
 function getLocalStorage() {
   if(localStorage.getItem('name')) {
@@ -91,6 +91,79 @@ window.addEventListener('load', getLocalStorage)
 
 /* Image change */
 
+/* константа по которой отлавливать будем клик */
+const button = document.querySelectorAll(".arrow");
+console.log(button);
+button.forEach(element => {
+  element.addEventListener("click", () => {
+    console.log("click");
+    getLinkToImage()
+  })
+});
+
+/* константа в которой поменяется изображение */
+
+let body = document.querySelector(".body");
+
+document.body.style.backgroundImage = "url('/momentum/img/jpeg/Tanshan-2.jpg')";
+
+
+
+
+
+
+async function getLinkToImage() {
+  //const url = 'https://api.unsplash.com/photos/random?query=morning&client_id=FUP1wlBU8_TQjQDicwXZCPPqG1SgcELEIWejq4a9dt0';
+  const response = await fetch(url);
+  const data = await response.json();
+  //console.log(data.urls.full);
+  //image = data.urls.regular
+  //document.body.style.backgroundImage.image
+  ///console.log(body);
+  };
+
+
+  /* Weather APP */
+
+  //
+
+  async function getWeather() {
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=Minsk&lang=en&appid=4f5eb9cfd63ac737d38c20e46e12bd32&units=metric`;
+    const res = await fetch(url);
+    const data = await res.json();
+    console.log(data.weather[0].id, data.weather[0].description, data.main.temp);
+
+    /* city */
+
+    const city = document.querySelector('.city-name');
+    city.textContent = `${data.name}`;
+
+    /*иконка облаков*/
+
+    const weatherIcon = document.querySelector('.weather__icon');
+    //console.log(weatherIcon);
+    weatherIcon.classList.add(`owf-${data.weather[0].id}`);
+
+    /* температура */
+
+    const temperature = document.querySelector('.temperature');
+    temperature.textContent = `${data.main.temp}°C`;
+
+    /* другие параметры */
+
+    const wind = document.querySelector('.wind');
+    wind.textContent = `wind speed: ${data.wind.speed} m/s`;
+
+    //const weatherDescription = document.querySelector('.parametrs');
+    //weatherDescription.textContent = data.weather[0].description;
+
+    const humidity = document.querySelector('.humidity');
+    humidity.textContent = `humidity: ${data.main.humidity}%`;
+
+
+
+  }
+  getWeather()
 
 
 

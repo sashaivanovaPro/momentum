@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Momentum</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <div class="player">
             <div class="button__wrapper">
@@ -23,18 +23,18 @@
                 <li class = "play-list__item"> New track title</li>
         </div>
         <div class="weather">
-            <h1 class="city-name">Antalya</h1>
+            <h1 class="city-name"></h1>
             <hr class="line">
-            <img class = "weather-icon" src="./img/png/icons8-cloud-lightning-64.png" alt="weather">
+            <i class = "weather__icon"></i>
             <ul class = "weather__parameters">
-                <li class="weather__param--item">Temperature</li>
-                <li class="weather__param--item">Wind</li>
-                <li class="weather__param--item">Humidity</li>
+                <div class="temperature"></div>
+                <div class="wind"></div>
+                <div class="humidity"></div>
             </ul>
         </div>
     </header>
     <main class ="main">
-            <button class = "arrow"><img src ="./img/png/icons8-double-left-64 (1).png" alt="arrow"></button>
+            <button class = "arrow arrow_1"><img src ="./img/png/icons8-double-left-64 (1).png" alt="arrow"></button>
             <section class="time">
                 <div class="year" id ="year"></div>
                 <div class="clock" id="clock"></div>
@@ -44,7 +44,7 @@
                 <input class="input__name" type="text" placeholder="[ Enter name ]" id = 'input__name' name = 'input__name'/>
                 </div>
             </section>
-            <button class = "arrow"><img src ="./img/png/icons8-double-right-64.png" alt="arrow"></button>
+            <button class = "arrow arrow_2"><img src ="./img/png/icons8-double-right-64.png" alt="arrow"></button>
     </main>
     <footer class="footer"> </footer>
     <script src="./js/main.js"></script>
