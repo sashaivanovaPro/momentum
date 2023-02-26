@@ -105,11 +105,7 @@ button.forEach(element => {
 
 let body = document.querySelector(".body");
 
-document.body.style.backgroundImage = "url('/momentum/img/jpeg/Tanshan-2.jpg')";
-
-
-
-
+document.body.style.backgroundImage = "url('/momentum/img/jpeg/Tanshan.jpg')";
 
 
 async function getLinkToImage() {
@@ -158,10 +154,21 @@ async function getLinkToImage() {
     const humidity = document.querySelector('.humidity');
     humidity.textContent = `humidity: ${data.main.humidity}%`;
 
-
-
   }
+
   getWeather()
+
+  //city.addEventListener('change',getWeather())
+
+
+  /* Quote of the day 	9f395de8bdf53c5506670fb4a34b533e */
+
+  /*async function getQuote() {
+    const url = `hhttps://favqs.com/api/quotes/`;
+    const res = await fetch(url);
+    const data = await res.json();
+
+  }*/
 
 
 

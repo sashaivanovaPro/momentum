@@ -24,7 +24,7 @@
                 <li class = "play-list__item"> New track title</li>
         </div>
         <div class="weather">
-            <h1 class="city-name"></h1>
+            <div class="city-name">Minsk</div>
             <hr class="line">
             <i class = "weather__icon owf"></i>
             <div class = "weather__parameters">
@@ -35,17 +35,19 @@
         </div>
     </header>
     <main class ="main">
-            <button class = "arrow arrow_1"><img src ="./img/png/icons8-double-left-64 (1).png" alt="arrow"></button>
             <section class="time">
                 <div class="year" id ="year"></div>
                 <div class="clock" id="clock"></div>
-                <div class="date" id ="date"></div>
+                <div class ="arrow__wrapper">
+                    <button class = "arrow arrow_1"><img src ="./img/png/icons8-left-48.png" alt="arrow"></button>
+                    <div class="date" id ="date"></div>
+                    <button class = "arrow arrow_2"><img src ="./img/png/icons8-right-48.png" alt="arrow"></button>
+                </div>
                 <div class="greeting__wrapper">
-                <div class="greeting" id="greeting"></div>
-                <input class="input__name" type="text" placeholder="[ Enter name ]" id = 'input__name' name = 'input__name'/>
+                    <div class="greeting" id="greeting"></div>
+                    <input class="input__name" type="text" placeholder="[ Enter name ]" id = 'input__name' name = 'input__name'/>
                 </div>
             </section>
-            <button class = "arrow arrow_2"><img src ="./img/png/icons8-double-right-64.png" alt="arrow"></button>
     </main>
     <footer class="footer"> </footer>
     <script src="./js/main.js"></script>

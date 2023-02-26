@@ -50,7 +50,7 @@ html {
 
 
 .body {
-    background: url("");
+    background: url("") center;
     transition: background-image 1s ease-in-out;
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,10 +130,20 @@ html {
 
 .city-name {
     margin: 0;
-    margin-bottom: 5px;
+    margin: 20px 0 0 0;
+    border: 0px solid transparent;
+    background-color: transparent;
+    color: white;
+    opacity: 0.8;
+    font-family: "Lato";
+    font-size: 36px;
+    font-weight: 400;
+    width: 50%;
+    padding: 0;
 }
 
 .weather {
+    max-width: 260px;
     padding: 0;
     margin: 0;
     margin-bottom: 100px;
@@ -161,16 +171,19 @@ html {
 .main {
     margin: 0;
     padding: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
 }
 
 .arrow {
     background: none;
     opacity: 0.8;
+    padding: 0;
 }
+
+/*.time {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}*/
 
 .year {
     color: white;
@@ -186,6 +199,13 @@ html {
     padding: 15px 0;
 }
 
+.arrow__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .date {
     color: white;
     font-size: 42px;
@@ -198,7 +218,7 @@ html {
 .greeting__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .greeting {
@@ -219,7 +239,9 @@ html {
     font-family: "Lato";
     font-size: 56px;
     font-weight: 400;
-    width: 50%;
+    padding: 0;
+    max-width: 30%;
+
 }
 
 .input__name ::placeholder {
@@ -239,10 +261,89 @@ html {
     opacity: 0.5;
 }
 
-
-
 /* Main styles END */
 
 /* Footer styles START */
 
 /* Footer styles END */
+
+@media screen and (max-width: 1300px) {
+
+    .body {
+        font-size: 16px;
+    }
+
+    .weather {
+        margin-bottom: 50px;
+    }
+
+    .main {
+        padding: 10px 0;
+    }
+
+    .clock {
+        font-size: 50px;
+    }
+
+    .date {
+        font-size: 32px;
+    }
+
+    .greeting,
+    .input__name {
+        font-size: 42px;
+    }
+
+    .arrow {}
+}
+
+@media screen and (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .header {
+        padding: 30px 0;
+    }
+
+    .player {
+        margin-bottom: 20px;
+    }
+
+    .weather {
+        margin-bottom: 20px;
+    }
+
+    .greeting__wrapper {
+        display: block;
+    }
+
+    .input__name {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .greeting {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .date {
+        font-size: 24px;
+    }
+
+    .greeting {
+        font-size: 32px;
+    }
+
+    .input__name {
+        font-size: 32px;
+    }
+}
