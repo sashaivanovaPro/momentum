@@ -92,6 +92,7 @@ window.addEventListener('load', getLocalStorage)
 /* Image change */
 
 /* константа по которой отлавливать будем клик */
+/*
 const button = document.querySelectorAll(".arrow");
 console.log(button);
 button.forEach(element => {
@@ -99,13 +100,13 @@ button.forEach(element => {
     console.log("click");
     getLinkToImage()
   })
-});
+});*/
 
 /* константа в которой поменяется изображение */
 
 let body = document.querySelector(".body");
 
-document.body.style.backgroundImage = "url('/momentum/img/jpeg/Tanshan.jpg')";
+/*document.body.style.backgroundImage = "url('/momentum/img/jpeg/Tanshan.jpg')";
 
 
 async function getLinkToImage() {
@@ -116,7 +117,7 @@ async function getLinkToImage() {
   //image = data.urls.regular
   //document.body.style.backgroundImage.image
   ///console.log(body);
-  };
+  };*/
 
 
   /* Weather APP */
