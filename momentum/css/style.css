@@ -226,6 +226,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .greeting {
@@ -268,11 +269,7 @@ html {
     opacity: 0.5;
 }
 
-/* Main styles END */
-
-/* Footer styles START */
-
-.footer {
+.quote__wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -285,7 +282,67 @@ html {
     opacity: 0.8;
     padding: 0;
     border: none;
+    cursor: pointer;
 }
+
+.rewind:hover {
+    opacity: 0.5;
+}
+
+/* Main styles END */
+
+/* Footer styles START */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    padding: 10px 0;
+}
+
+.info__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my__info--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+.github__link,
+.school__link {
+    text-decoration: none;
+    color: white;
+}
+
+.github__link,
+.copyright,
+.info__year,
+.school__link {
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.school__info--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+
 
 /* Footer styles END */
 
@@ -329,6 +386,11 @@ html {
         margin-bottom: 40px;
     }
 
+    .player,
+    .weather {
+        margin-bottom: 20px;
+    }
+
     .play-list {
         align-items: center;
     }
@@ -360,6 +422,10 @@ html {
 
     .greeting {
         margin-right: 0;
+    }
+
+    .info__wrapper {
+        flex-direction: column;
     }
 }
 
