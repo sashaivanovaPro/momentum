@@ -52,7 +52,7 @@ html {
 .body {
     background-image: url('../img/jpeg/Tanshan.jpg');
     transition: background-image 1s ease-in-out;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     margin: 0 auto;
     padding: 0;
