@@ -142,6 +142,12 @@ html {
     padding: 0;
 }
 
+.city-picker {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
 .weather {
     max-width: 260px;
     padding: 0;
@@ -171,6 +177,7 @@ html {
 .main {
     margin: 0;
     padding: 40px 0;
+    margin-bottom: 150px;
 }
 
 .arrow {
@@ -265,6 +272,21 @@ html {
 
 /* Footer styles START */
 
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.rewind {
+    background: none;
+    opacity: 0.8;
+    padding: 0;
+    border: none;
+}
+
 /* Footer styles END */
 
 @media screen and (max-width: 1300px) {
@@ -294,7 +316,6 @@ html {
         font-size: 42px;
     }
 
-    .arrow {}
 }
 
 @media screen and (max-width: 700px) {
@@ -303,6 +324,15 @@ html {
         flex-direction: column;
         align-items: center;
     }
+
+    .main {
+        margin-bottom: 40px;
+    }
+
+    .play-list {
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
