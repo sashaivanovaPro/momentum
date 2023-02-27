@@ -50,14 +50,13 @@ html {
 
 
 .body {
-    background-image: url('../img/jpeg/Tanshan.jpg');
+    background: url('../img/jpeg/Tanshan.jpg') center/100% 100% no-repeat;
     transition: background-image 1s ease-in-out;
-    background-repeat: repeat;
     background-size: cover;
     margin: 0 auto;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     color: white;
     font-family: "Lato";
     font-size: 20px;
@@ -277,6 +276,12 @@ html {
     align-content: center;
 }
 
+.quote {
+    font-family: "Lato";
+    font-size: 24px;
+    font-weight: 300;
+}
+
 .rewind {
     background: none;
     opacity: 0.8;
@@ -294,12 +299,9 @@ html {
 /* Footer styles START */
 
 .footer {
-    position: fixed;
-    bottom: 0;
     display: block;
     width: 100%;
-    background-color: black;
-    opacity: 0.4;
+    background: rgba(0, 0, 0, 0.3);
     padding: 10px 0;
 }
 
