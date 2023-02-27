@@ -50,7 +50,7 @@ html {
 
 
 .body {
-    background: url('../img/jpeg/Tanshan.jpg') 50%/cover no-repeat fixed;
+    background: url('../img/jpeg/Tanshan.jpg') 50%/cover no-repeat;
     transition: background-image 1s ease-in-out;
     margin: 0 auto;
     padding: 0;
@@ -279,6 +279,7 @@ html {
     font-family: "Lato";
     font-size: 24px;
     font-weight: 300;
+    text-align: center;
 }
 
 .rewind {
@@ -431,7 +432,7 @@ html {
 @media screen and (max-width: 450px) {
 
     .date {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .greeting {
