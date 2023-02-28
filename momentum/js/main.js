@@ -54,6 +54,7 @@ function currentTime() {
   } else if (hour < 24){
         sayHello =greeting[2];
   };
+
   let name = document.getElementById("input__name");
 
   document.getElementById("greeting").innerText = sayHello + " , ";
@@ -104,7 +105,7 @@ button.forEach(element => {
 
 /* константа в которой поменяется изображение */
 
-let body = document.querySelector(".body");
+//let body = document.querySelector(".body");
 
 /*document.body.style.backgroundImage = "url('/momentum/img/jpeg/Tanshan.jpg')";
 
