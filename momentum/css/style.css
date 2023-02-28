@@ -50,7 +50,7 @@ html {
 
 
 .body {
-    background: url(' ') 50%/cover repeat;
+    background: url('') 50%/cover repeat;
     transition: background-image 1s ease-in-out;
     margin: 0 auto;
     padding: 0;
@@ -64,6 +64,8 @@ html {
     flex-direction: column;
     justify-content: space-between;
 }
+
+/*../img/jpeg/Tanshan.jpg*/
 
 
 /* Header styles START */
