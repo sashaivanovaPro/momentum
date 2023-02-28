@@ -41,6 +41,40 @@ if (hour < 6 ){
       // результат - number, переводим в строку и добавляем до 2 значного символа ноль, если это значение меньше 10
     // min - попадает в рэндом, max - нет
 
+    function getSlideNext(){
+        if (number !== 20){
+            number = parseInt(number) + 1;
+        } else {
+            number = "01";
+        };
+        console.log((number.toString()).padStart(2,"0"));
+        return (number.toString()).padStart(2,"0");
+      }
+
+      plusImage.onclick = function(){
+        getSlideNext();
+        getImage ();
+      }
+      // function to change image to next in arrow
+
+      function getSlidePrevious(){
+        if (number !==1){
+            number = parseInt(number) - 1;
+        } else{
+            number = "20";
+        };
+        console.log((number.toString()).padStart(2,"0"));
+        return (number.toString()).padStart(2,"0");
+      }
+
+      minusImage.onclick = function(){
+        getSlidePrevious();
+        getImage ();
+      }
+      // function to change image to previous in arrow
+
+    const img = new Image();
+    img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${choosePicture}/${(number.toString()).padStart(2,"0")}.jpg`;
 
 function getImage (){
 //ссылка прописана с обратными кавычками для формирования новой строки с учётом полученных данных из функции
@@ -49,42 +83,11 @@ function getImage (){
 
 // add a new style to body element
 
-const img = new Image();
-  img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${choosePicture}/${n}.jpg`;
+
   img.onload = () => {
     document.body.style.backgroundImage = `url(${img.src})`;;
   };
   console.log(img.src);
-
-function getSlideNext(){
-    if (number !== 20){
-        number = parseInt(number) + 1;
-    } else {
-        number = "01";
-    };
-    console.log((number.toString()).padStart(2,"0"));
-    return (number.toString()).padStart(2,"0");
-  }
-
-  plusImage.onclick = function(){
-    getSlideNext();
-  }
-  // function to change image to next in arrow
-
-  function getSlidePrevious(){
-    if (number !==1){
-        number = parseInt(number) - 1;
-    } else{
-        number = "20";
-    };
-    console.log((number.toString()).padStart(2,"0"));
-    return (number.toString()).padStart(2,"0");
-  }
-
-  minusImage.onclick = function(){
-    getSlidePrevious();
-  }
-  // function to change image to previous in arrow
-  img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${choosePicture}/${number}.jpg`;
+  img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${choosePicture}/${(number.toString()).padStart(2,"0")}.jpg`;
 }
 getImage ()
