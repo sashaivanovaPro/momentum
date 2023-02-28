@@ -50,7 +50,7 @@ html {
 
 
 .body {
-    background: url('../img/jpeg/Tanshan.jpg') 50%/cover repeat;
+    background: url(' ') 50%/cover repeat;
     transition: background-image 1s ease-in-out;
     margin: 0 auto;
     padding: 0;

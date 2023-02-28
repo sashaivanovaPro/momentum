@@ -22,9 +22,19 @@ let choosePicture;
     choosePicture =dayPart[2];
   };
 
+  function getRandomInt(min,max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    n = ((Math.floor(Math.random() * (max - min)) + min).toString()).padStart(2,"0");
+    return n
+  }
+  getRandomInt(1, 21);
+
+// n = (Math.floor(Math.random() * (max - min)) + min).toString.padStart(2,"0");
+
 let body = document.querySelector(".body");
 
-let link = `url('https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${choosePicture}/18.jpg')`;
+let link = `url('https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${choosePicture}/${n}.jpg')`;
 
 body.style.backgroundImage = link;
 }
