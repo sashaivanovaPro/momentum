@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  width: 100vw;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  @extend %font-main;
+  // @include font(1.6rem, 2rem, 400, normal);
+}

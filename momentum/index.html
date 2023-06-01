@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" class="favicon" href="./img/svg/icons8-clock-128.png">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/newstyle.css">
     <link rel="stylesheet" href="./css/owfont-regular.css">
     <title>Momentum</title>
 </head>
 <body class="body">
     <header class="header">
         <div class="player">
-            <div class="button__wrapper">
+            <div class="player__buttons">
                 <button class = "player__button" id="rewind"><img src="./img/png/icons8-rewind-button-round-50.png" alt="rewind"></button>
                 <button class = "player__button" id="play"><img src="./img/png/icons8-circled-play-100.png" alt="play"></button>
                 <button class = "player__button" id="forward"><img src="./img/png/icons8-fast-forward-round-50.png" alt="play"></button>
             </div>
-            <ul class="play-list">
-                <li class = "play-list__item"> Here will be a new track</li>
-                <li class = "play-list__item"> Here will be a new track</li>
-                <li class = "play-list__item"> Here will be a new track</li>
-                <li class = "play-list__item"> Here will be a new track</li>
+            <ul class="player__list">
+                <li class = "player__list-item"> Here will be a new track</li>
+                <li class = "player__list-item"> Here will be a new track</li>
+                <li class = "player__list-item"> Here will be a new track</li>
+                <li class = "player__list-item"> Here will be a new track</li>
             </ul>
         </div>
         <div class="weather">
@@ -52,7 +52,8 @@
             </section>
             <section class="quote__wrapper">
                 <button class="rewind"><img src="./img/png/icons8-restart-48.png" alt="rewind"></button>
-                <h3 class="quote"> "Here will be a quote of the day"</h3>
+                <p class="quote"> "Here will be a quote of the day"</p>
+                <h3 class="author">""</h3>
             </section>
     </main>
     <footer class="footer">
@@ -71,5 +72,6 @@
     <script src="./js/main.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/weather.js"></script>
+    <script type="module" src="./js/quote.js"></script>
 </body>
 </html>

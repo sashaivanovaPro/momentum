@@ -9,10 +9,10 @@ let dayPart = ['morning','afternoon','evening','night']; // name of pickture arr
 let choosePicture; // item from picture arrow
 
 let plusImage = document.querySelector(".arrow_right") // find arrow right element
-console.log(plusImage);
+// console.log(plusImage);
 
 let minusImage = document.querySelector(".arrow_left") // find arrow left element
-console.log(minusImage);
+// console.log(minusImage);
 
 if (hour < 6 ){
     choosePicture = dayPart[3];
@@ -31,12 +31,10 @@ if (hour < 6 ){
         min = Math.ceil(min);
         max = Math.floor(max);
         n = ((Math.floor(Math.random() * (max - min)) + min).toString()).padStart(2,"0");
-        console.log(n);
+        // console.log(n);
         return n
       }
     let number = getRandomInt(2,20);
-
-    console.log (number);
 
       // результат - number, переводим в строку и добавляем до 2 значного символа ноль, если это значение меньше 10
     // min - попадает в рэндом, max - нет
@@ -87,7 +85,7 @@ function getImage (){
   img.onload = () => {
     document.body.style.backgroundImage = `url(${img.src})`;;
   };
-  console.log(img.src);
+  // console.log(img.src);
   img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${choosePicture}/${(number.toString()).padStart(2,"0")}.jpg`;
 }
 getImage ()

@@ -6,7 +6,7 @@
     const url = `https://api.openweathermap.org/data/2.5/weather?q=Minsk&lang=en&appid=4f5eb9cfd63ac737d38c20e46e12bd32&units=metric`;
     const res = await fetch(url);
     const data = await res.json();
-    console.log(data.weather[0].id, data.weather[0].description, data.main.temp);
+    // console.log(data.weather[0].id, data.weather[0].description, data.main.temp);
 
     /* city */
 

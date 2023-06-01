@@ -1,0 +1,25 @@
+{
+  "name": "sashaivanovapro-jsfepreschool2022q4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch momentum/sass/style.scss momentum/sass/newstyle.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/sashaivanovapro-JSFEPRESCHOOL2022Q4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/sashaivanovapro-JSFEPRESCHOOL2022Q4/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/sashaivanovapro-JSFEPRESCHOOL2022Q4#readme",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
